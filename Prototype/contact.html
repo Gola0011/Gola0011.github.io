@@ -1,27 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/styles.css">
     <title>Arc</title>
 </head>
+
 <body>
+
+    <!-- navigation bar -->
+
     <header>
         <img src="images/logo.svg" alt="ARC logo">
-        <nav>   
+        <nav>
             <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
             </ul>
-        </nav>  
+        </nav>
     </header>
-   <main>
-        
+    <main>
+
+        <!-- Contact Form -->
+
+        <div class="contact-1 wrapper wrapper2">
+            <div>
+                <h1>We Want to Hear From You</h1>
+                <p>If you have an idea for an activity that you think you and your fellow students would love to
+                    participate in that we are not already offering, we want to know about it!</p>
+            </div>
+
+            <img src="images/contact-img.svg" alt="ARC contact">
+        </div>
+
+        <!-- Contact form -->
+
+        <div class="contact wrapper wrapper2">
+            <form>
+                <h7>Contact us.</h7>
+
+                <fieldset>
+                    <label>Full Name</label>
+                    <input type="text" name="full name" placeholder="Full Name">
+                </fieldset>
+                <fieldset>
+                    <label>Student Number</label>
+                    <input type="text" name="student number" placeholder="Student Number">
+                </fieldset>
+                <fieldset>
+                    <label>Email</label>
+                    <input type="text" name="email" placeholder="Email">
+                </fieldset>
+                <fieldset>
+                    <label>Message</label>
+                    <textarea name="message" placeholder="message"></textarea>
+                </fieldset>
+                <button>Submit</button>
+            </form>
+        </div>
+
+        <div class="location">
+            <div class="wrapper wrapper2">
+                <h1>Our Location.</h1>
+                <br>
+                <h2>Algonquin College Students' Association</h2>
+                <br>
+                <P>Monday to Friday – 8:30am to 6:00pm
+                    <br>
+                    1385 Woodroffe Avenue (E114)
+                    <br>
+                    Ottawa, Ontario
+                    <br>
+                    K2G 1V8
+                    <br>
+                    (613) 727-4723 x7711</P>
+            </div>
+            <br>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.039148391476!2d-75.75692279999997!3d45.34802199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College!5e0!3m2!1sen!2sca!4v1584063773183!5m2!1sen!2sca"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0">
+                </iframe>
+            </div>
+        </div>
+
     </main>
     <footer>
-        <div>
+        <div class="follow">
             <p>Follow Us</p>
         </div>
         <div class="social-icons">
@@ -35,4 +104,6 @@
         </div>
     </footer>
 </body>
+
+
 </html>
