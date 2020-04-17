@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* this is the css reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* setting the size of the text and the font stack */
+
+html {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6rem;
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  font-family: 'Caveat',
+    cursive;
+  font-size: 1.7em;
+  text-shadow: 2px 2px #ac008f;
+}
+
+h2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  font-family: 'Caveat',
+    cursive;
+  font-size: 1.7em;
+  text-shadow: 2px 2px #ac008f;
+
+}
+
+/* header/social media icons */
+
+.social-header {
+  background-color: #12112B;
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+.social-header a img {
+  width: 45px;
+  height: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* Changes the background of the page */
+
+.wrapper {
+  background-color: #12112B;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-bottom: 4em;
+
+}
+
+/* Makes images resposive */
+
+.wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.landing-wrapper {
+  background-color: #12112B;
+  padding-bottom: 3em;
+}
+
+.landing-wrapper img {
+  margin: 2em;
+
+}
+
+/* Navigation Buttons for landing page */
+
+.landing-nav ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  background-color: #B90052;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  border-radius: 2em;
+  font-family: 'Caveat', cursive;
+  font-size: 1.7em;
+  text-shadow: 2px 2px #ff00d4;
+}
+
+.landing-nav ul li a:hover {
+  cursor: pointer;
+  background-color: #931982;
+  letter-spacing: 2px;
+  transition-duration: 0.3s;
+}
+
+.landing-nav ul {
+  margin: 2em;
+}
+
+.landing-nav ul li {
+  padding-top: 3em;
+  width: 100%;
+
+}
+
+.landing-nav {
+  width: 100%;
+  margin-bottom: 2em;
+  background-image: url(../images/tree-pink-blue.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Nav for drop down */
+
+nav a img {
+  width: 60px;
+  margin: auto;
+  display: flex;
+  margin-top: -4.1em;
+  padding-bottom: 0.5em;
+}
+
+.drop-nav button {
+  border: none;
+  background-color: rgb(0, 0, 0);
+  padding: 2.5em;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 2;
+}
+
+.drop-nav {
+  position: relative;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.drop-nav ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  background-color: #B90052;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  border-radius: 2em;
+  font-family: 'Caveat', cursive;
+  font-size: 1.7em;
+  text-shadow: 2px 2px #ff00d4;
+}
+
+.drop-nav ul li a:hover {
+  cursor: pointer;
+  background-color: #931982;
+  letter-spacing: 2px;
+  transition-duration: 0.3s;
+}
+
+.drop-nav ul li {
+  padding-top: 1em;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.drop-nav ul {
+  background-color: #2A054E;
+  padding-bottom: 1em;
+}
+
+/* contact form */
+
+input[type=text],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  margin-bottom: 1.5em;
+}
+
+.formdiv {
+  padding: 1.5em;
+  background-color: #95889428;
+  border-radius: 2em;
+  margin-bottom: 1.5em;
+}
+
+label {
+  color: white;
+
+}
+
+input[type=submit] {
+  background-color: #B90052;
+  color: white;
+  padding: 0.25em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-radius: 2em;
+  font-family: 'Caveat', cursive;
+  font-size: 1.5em;
+  text-shadow: 2px 2px #ff00d4;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+  background-color: #931982;
+  letter-spacing: 2px;
+  transition-duration: 0.3s;
+}
+
+.center-link {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 3em;
+}
+
+/* Footer styles */
+
+footer {
+  background-color: black;
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+footer a img {
+  display: inline-flex;
+  padding: 1em;
+  align-items: center;
+  background-color: black;
+  width: 35px;
+  height: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+footer p {
+  font-weight: bold;
+}
+
+/* Tablet */
+
+@media (min-width: 700px) {
+
+  /* Puts the recent projects and gallery into a side by side grid */
+
+  .recent,
+  .gallery,
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3em;
+    align-items: center;
+  }
+
+  /*  Changes and adds padding to the heaidngs  */
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .drop-nav ul li {
+    padding-top: 2em;
+    margin-right: 4em;
+    margin-left: 4em;
+  }
+
+  .drop-nav ul {
+    padding-bottom: 2em;
+  }
+
+
+
+  /* re sizing for tablet  */
+
+  .landing-nav ul {
+    margin-right: 8em;
+    margin-left: 8em;
+  }
+
+  .landing-wrapper img {
+    margin-right: 8em;
+    margin-left: 8em;
+
+  }
+}
+
+@media (min-width: 1100px) {
+
+  .wrapper {
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .designer,
+  .contact-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3em;
+    align-items: center;
+  }
+
+  .landing-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .landing-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .landing-nav ul {
+    margin-top: -2em;
+    /* margin-right: 40em;
+    margin-left: 40em; */
+    max-width: 700px;
+  }
+
+  .landing-nav ul li a {
+    padding-left: 9em;
+    padding-right: 9em;
+  }
+
+  .landing-wrapper img {
+    /* margin-right: 45em;
+    margin-left: 45em; */
+    max-width: 500px;
+  }
+
+  .dropmenu {
+    display: none;
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: inline-flex;
+    position: relative;
+    justify-content: flex-end;
+    align-content: flex-end;
+    width: 100%;
+    background-image: url(../images/kaitlin_logo2.svg);
+    background-size: 95px;
+    background-repeat: no-repeat;
+    background-position: 100px 15px;
+  }
+
+  .drop-nav ul {
+    background-color: black;
+
+  }
+
+  .drop-nav ul li a {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0em;
+  }
+
+  #drop-nav img {
+    z-index: 5;
+    display: block;
+  }
+
+}
